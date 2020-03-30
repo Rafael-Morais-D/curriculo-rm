@@ -9,39 +9,6 @@
     scroll-behavior: smooth;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-    font-weight: bolder;
-    transition: color 0.6s ease-in;
-}
-
-a:hover {
-    color: red;
-}
-
-ul {
-    list-style: none;
-}
-
-li {
-    margin: 20px 0 0 0;
-}
-
-hr{
-    margin: 20px 0;
-}
-
-img {
-    border-radius: 50%;
-    transition: all 0.8s ease-in-out;
-}
-
-img:hover{
-    transform: rotate(30deg);
-    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
-}
-
 header p{
     font-weight: bold;
 }
@@ -53,6 +20,58 @@ main, aside{
     background-color: rgb(220, 220, 200);
 }
 
-ol {
-    padding-left: 30px;
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bolder;
+    transition: color 0.6s ease-in;
+    /* cursor: pointer; */
+}
+
+a:hover {
+    color: rgb(24,9,107);
+}
+
+ul {
+    list-style: none;
+}
+
+h4, li:first-child{
+    margin-top: 10px;
+}
+
+li:last-child{
+    margin-bottom: 20px;
+}
+
+#meuHeader, aside p{
+    font-weight: bold;
+}
+
+/* section.destaque{
+    color:red;
+}
+    */
+
+img {
+    border-radius: 50%;
+    transition: all 0.8s ease-in-out;
+}
+
+img:hover{
+    transform: rotate(30deg) scale(1.05);
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+}
+
+a[href='#meuHeader'] {
+    background-color: crimson;
+    color: #fff;
+    border: 2px solid black;
+    padding: 9px 22px;
+    text-transform: capitalize;
+    height: 60px;
+    width: fit-content;
+    border-radius: 30px;
+    margin: 20px 30px;
+    display: block;
 }
