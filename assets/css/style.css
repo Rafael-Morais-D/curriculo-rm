@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: sans-serif;
 }
 
 header div{
@@ -26,7 +27,7 @@ header div p:first-child i:hover{
     transition: all 0.6s ease-in;
 }
 
-.infoInicial, aside{
+.info-inicial, aside{
     margin: 20px 40px;
     padding: 10px;
     border-radius: 10px;
@@ -39,10 +40,6 @@ header, footer{
     background-image: linear-gradient(45deg, #6caeb6, #b0e0e6);
 }
 
-h2:first-child{
-    text-align: center;
-}
-
 header {
     filter: drop-shadow(0 3px 3px rgba(0,0,0,0.5));
 }
@@ -50,7 +47,10 @@ header {
 footer {
     filter: drop-shadow(0 -3px 3px rgba(0,0,0,0.5));
     text-align: center;
-    width: 100vw;
+}
+
+section:first-child{
+    text-align: center;
 }
 
 section:not(:first-child){
@@ -102,6 +102,25 @@ li:last-child{
     transform: rotate(30deg) scale(1.05);
     filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
     transition: all 0.8s ease-in-out;
+}
+
+.info-inicial section h2 {
+    margin-bottom: 20px;
+}
+
+.info-inicial img:hover {
+    filter: brightness(0.5);
+    transition: all 0.8s ease-in-out;
+}
+
+article.portfolio p {
+    text-align: justify;
+    padding: 10px;
+}
+
+article.portfolio {
+    display: inline-block;
+    width: 30%;
 }
 
 a#irParaOTopo[href='#meuHeader'] {
